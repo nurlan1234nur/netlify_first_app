@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Container, Card, Button, Form, Alert } from 'react-bootstrap';
+import { Container, Card, Button, Form, Alert, ProgressBar } from 'react-bootstrap';
 
 function App() {
   const [questions, setQuestions] = useState([]);
@@ -60,20 +60,40 @@ function App() {
   };
 
   if (questions.length === 0) {
-    return <Container className="mt-5">Loading questions...</Container>;
+    return (
+      <Container className="test-container">
+        <Card>
+          <Card.Body className="text-center">
+            <div className="spinner-border text-primary" role="status">
+              <span className="visually-hidden">Loading...</span>
+            </div>
+            <p className="mt-3">Асуултуудыг уншиж байна...</p>
+          </Card.Body>
+        </Card>
+      </Container>
+    );
   }
 
   if (showResults) {
+    const percentage = (score / questions.length) * 100;
     return (
       <Container className="test-container">
         <Card className="result-container">
           <Card.Body>
             <Card.Title className="text-center mb-4">Тестийн Үр Дүн</Card.Title>
+            <ProgressBar 
+              now={percentage} 
+              label={`${Math.round(percentage)}%`}
+              className="mb-4"
+            />
             <Alert variant="info" className="text-center">
-              Та {questions.length} асуултаас {score} зөв хариулсан байна.
+              <h4 className="mb-0">Баяр хүргэе!</h4>
+              <p className="mb-0 mt-2">
+                Та {questions.length} асуултаас {score} зөв хариулсан байна.
+              </p>
             </Alert>
             <div className="text-center mt-4">
-              <Button variant="primary" onClick={resetTest}>
+              <Button variant="primary" onClick={resetTest} size="lg">
                 Дахин Эхлэх
               </Button>
             </div>
@@ -84,11 +104,17 @@ function App() {
   }
 
   const currentQuestion = questions[currentQuestionIndex];
+  const progress = ((currentQuestionIndex + 1) / questions.length) * 100;
 
   return (
     <Container className="test-container">
       <Card>
         <Card.Body>
+          <ProgressBar 
+            now={progress} 
+            label={`${Math.round(progress)}%`}
+            className="mb-4"
+          />
           <Card.Title className="mb-4">
             Асуулт {currentQuestionIndex + 1}/{questions.length}
           </Card.Title>
@@ -101,7 +127,7 @@ function App() {
             />
           )}
           
-          <Card.Text className="mb-4">{currentQuestion.question}</Card.Text>
+          <Card.Text className="mb-4 fs-5">{currentQuestion.question}</Card.Text>
           
           <Form>
             {currentQuestion.options.map((option, index) => (
@@ -124,6 +150,7 @@ function App() {
               variant="secondary"
               onClick={handlePrevious}
               disabled={currentQuestionIndex === 0}
+              size="lg"
             >
               Өмнөх
             </Button>
@@ -131,6 +158,7 @@ function App() {
               variant="primary"
               onClick={handleNext}
               disabled={!userAnswers[currentQuestionIndex]}
+              size="lg"
             >
               {currentQuestionIndex === questions.length - 1 ? 'Дуусгах' : 'Дараах'}
             </Button>

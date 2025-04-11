@@ -7,17 +7,8 @@
       "Эрдэнэт",
       "Чойбалсан"
     ],
-    "correctAnswer": "Улаанбаатар"
-  },
-  {
-    "question": "Монгол улсын хамгийн том нуур аль вэ?",
-    "options": [
-      "Увс нуур",
-      "Хөвсгөл нуур",
-      "Хар-Ус нуур",
-      "Буйр нуур"
-    ],
-    "correctAnswer": "Увс нуур"
+    "correctAnswer": "Улаанбаатар",
+    "image": "https://example.com/ulaanbaatar.jpg"
   },
   {
     "question": "Монгол улсын хамгийн өндөр уул аль вэ?",
@@ -27,6 +18,18 @@
       "Отгонтэнгэр",
       "Бурхан Халдун"
     ],
-    "correctAnswer": "Мөнх Хайрхан"
+    "correctAnswer": "Мөнх Хайрхан",
+    "image": "https://example.com/munkhkhairkhan.jpg"
+  },
+  {
+    "question": "Монгол улсын хамгийн урт гол аль вэ?",
+    "options": [
+      "Сэлэнгэ",
+      "Орхон",
+      "Халх гол",
+      "Эг"
+    ],
+    "correctAnswer": "Сэлэнгэ",
+    "image": "https://example.com/selenge.jpg"
   }
 ] 
