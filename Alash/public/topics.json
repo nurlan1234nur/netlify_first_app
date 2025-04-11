@@ -1,0 +1,53 @@
+[
+  {
+    "id": "math",
+    "name": "Математик",
+    "description": "Математикийн үндсэн мэдлэгийн тестүүд",
+    "tests": [
+      {
+        "id": "math-basic",
+        "name": "Үндсэн математик",
+        "description": "Нэмэх, хасах, үржүүлэх, хуваах үйлдлүүд"
+      },
+      {
+        "id": "math-algebra",
+        "name": "Алгебр",
+        "description": "Тэгшитгэл, тэгш бус байдал, функц"
+      }
+    ]
+  },
+  {
+    "id": "physics",
+    "name": "Физик",
+    "description": "Физикийн үндсэн мэдлэгийн тестүүд",
+    "tests": [
+      {
+        "id": "physics-mechanics",
+        "name": "Механик",
+        "description": "Хөдөлгөөн, хүч, энерги"
+      },
+      {
+        "id": "physics-electricity",
+        "name": "Цахилгаан",
+        "description": "Цахилгаан гүйдэл, хүчдэл, эсэргүүцэл"
+      }
+    ]
+  },
+  {
+    "id": "chemistry",
+    "name": "Хими",
+    "description": "Химийн үндсэн мэдлэгийн тестүүд",
+    "tests": [
+      {
+        "id": "chemistry-basic",
+        "name": "Үндсэн хими",
+        "description": "Атом, молекулын бүтэц, химийн элементүүд"
+      },
+      {
+        "id": "chemistry-reactions",
+        "name": "Химийн урвал",
+        "description": "Химийн урвалын төрлүүд, тэнцвэр"
+      }
+    ]
+  }
+] 
