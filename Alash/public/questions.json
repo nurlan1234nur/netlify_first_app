@@ -7,8 +7,7 @@
       "Эрдэнэт",
       "Чойбалсан"
     ],
-    "correctAnswer": "Улаанбаатар",
-    "image": "https://example.com/ulaanbaatar.jpg"
+    "correctAnswer": "Улаанбаатар"
   },
   {
     "question": "Монгол улсын хамгийн өндөр уул аль вэ?",
@@ -18,8 +17,7 @@
       "Отгонтэнгэр",
       "Бурхан Халдун"
     ],
-    "correctAnswer": "Мөнх Хайрхан",
-    "image": "https://example.com/munkhkhairkhan.jpg"
+    "correctAnswer": "Мөнх Хайрхан"
   },
   {
     "question": "Монгол улсын хамгийн урт гол аль вэ?",
@@ -29,7 +27,6 @@
       "Халх гол",
       "Эг"
     ],
-    "correctAnswer": "Сэлэнгэ",
-    "image": "https://example.com/selenge.jpg"
+    "correctAnswer": "Сэлэнгэ"
   }
 ] 
