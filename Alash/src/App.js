@@ -93,6 +93,14 @@ function App() {
             Асуулт {currentQuestionIndex + 1}/{questions.length}
           </Card.Title>
           
+          {currentQuestion.image && (
+            <img
+              src={currentQuestion.image}
+              alt="Question"
+              className="question-image"
+            />
+          )}
+          
           <Card.Text className="mb-4">{currentQuestion.question}</Card.Text>
           
           <Form>
