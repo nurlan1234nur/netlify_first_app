@@ -1,35 +1,27 @@
 [
   {
+    "topic": "Англи хэл",
+    "question": "What is the capital of the UK?",
+    "options": ["London", "Paris", "Berlin", "Madrid"],
+    "correctAnswer": "London"
+  },
+  {
+    "topic": "Алаш",
     "question": "Монгол улсын нийслэл хот аль вэ?",
-    "options": [
-      "Улаанбаатар",
-      "Дархан",
-      "Эрдэнэт",
-      "Чойбалсан"
-    ],
-    "correctAnswer": "Улаанбаатар",
-    "image": "https://example.com/ulaanbaatar.jpg"
+    "options": ["Улаанбаатар", "Дархан", "Эрдэнэт", "Чойбалсан"],
+    "correctAnswer": "Улаанбаатар"
   },
   {
-    "question": "Монгол улсын хамгийн өндөр уул аль вэ?",
-    "options": [
-      "Мөнх Хайрхан",
-      "Хүйтэн",
-      "Отгонтэнгэр",
-      "Бурхан Халдун"
-    ],
-    "correctAnswer": "Мөнх Хайрхан",
-    "image": "https://example.com/munkhkhairkhan.jpg"
+    "topic": "Ескендир",
+    "question": "Ескендир хаан аль орныг эзэлсэн бэ?",
+    "options": ["Грек", "Хятад", "Франц", "Англи"],
+    "correctAnswer": "Грек"
   },
   {
-    "question": "Монгол улсын хамгийн урт гол аль вэ?",
-    "options": [
-      "Сэлэнгэ",
-      "Орхон",
-      "Халх гол",
-      "Эг"
-    ],
-    "correctAnswer": "Сэлэнгэ",
-    "image": "https://example.com/selenge.jpg"
+    "topic": "Парасат майданы",
+    "question": "Парасат майданы ямар утгатай вэ?",
+    "options": ["Оюун ухаан", "Уул", "Газар", "Нэргүй"],
+    "correctAnswer": "Оюун ухаан"
   }
-] 
+  
+]
